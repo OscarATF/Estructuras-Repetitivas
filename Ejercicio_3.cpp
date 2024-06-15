@@ -6,6 +6,10 @@ int main()
 	cout<<"Programa que suma los n primeros numeros"<<endl;
 	cout<<"Ingrese el valor de n"<<endl;
 	cin>>num;
+	while (num<0) {
+		cout<<"Porfavor ingrese un valor positivo"<<endl;
+		cin>>num;
+	}
 	for(int i=1;i<=num;i++){
 		sum=sum+i;
 	}
