@@ -7,6 +7,12 @@ int main()
 	cout<<"Programa para saber el mayor numero de una lista"<<endl;
 	cout<<"Ingrese el total de numeros"<<endl;
 	cin>>total;
+	while (total<0)
+	{
+		cout<<"Porfavor ingrese una cantidad total valida"<<endl;
+		cin>>total;
+	}
+	system("cls");
 	for (int i=1;i<=total;i++) {
 		cout<<"Ingrese un numero"<<endl;
 		cin>>num;
