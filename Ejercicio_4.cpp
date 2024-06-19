@@ -8,6 +8,11 @@ int main()
 	do {
 		cout<<"Ingrese un gasto"<<endl;
 		cin>>gasto;
+		while (gasto<0)
+		{
+			cout<<"Porfavor ingrese un gasto valido"<<endl;
+			cin>>gasto;
+		}
 		cout<<"Desea seguir ingresando gastos? (si/no)"<<endl;
 		cin>>op;
 		suma=suma+gasto;
