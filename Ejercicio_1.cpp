@@ -1,18 +1,29 @@
 #include <iostream>
+#include <windows.h>
+
+int n;
+int resultado=0;
 using namespace std;
-int main()
-{
-	int n,i,m;
-	cout<<"Programa que imprimira los primeros n multiplos de 7"<<endl;
+void multiplos(){
+		SetConsoleOutputCP(CP_UTF8);
+		cout<<"Programa que imprimira los primeros n múltiplos de 7"<<endl;
 	cout<<"Ingrese el valor de n"<<endl;
-	cin>>n;
 	while (n<0) {
 				cout<<"*Invalido! Introduzca un numero positivo"<<endl;
 				cin>>n;
 			}
-	for(i=1;i<=n;i++) {
-		m=i*7;
-		cout<<m<<endl;
+			
+	cin>>n;
+	cout<<"LOS MÚLTIPLOS SON: "<<endl;
+	for(int i=1;i<=n;i++){
+		resultado=i*7;
+		cout<<resultado<<endl;
+	
 	}
-	return 0;
 }
+int main(){
+			multiplos();
+	return 0;
+	}
+
+
